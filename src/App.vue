@@ -13,7 +13,6 @@ import TheCounter from './components/TheCounter.vue';
 import ChangeCounter from './components/ChangeCounter.vue';
 import FavoriteValue from './components/FavoriteValue.vue';
 
-
 export default {
   components: {
     BaseContainer,
@@ -23,8 +22,8 @@ export default {
   },
   methods: {
     addOne() {
-      // this.$store.commit('increase', { value: 10 });
-      this.$store.commit({
+      // this.$store.dispatch('increase', { value: 10 });
+      this.$store.dispatch({
         type: 'increase',
         value: 10
       });
